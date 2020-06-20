@@ -204,7 +204,7 @@ nav ul{
     border-radius: 10px;
     padding: 50px 48px;
     margin: 20px;
-    box-shadow: 5px 20px 50px #1070B1;
+    box-shadow: 5px 10px 30px #1070B1;
 }
 
 .card h6 {
@@ -232,115 +232,85 @@ nav ul{
     cursor: pointer;
 }
 
-@media screen and (min-width: 748px){
-    /* .card{
+@media screen and (min-width: 768px){
+
+    .home-body {
         display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(4, auto);
-        grid-gap:10px
+        grid-template-columns: repeat(2, minmax(200px, auto));
+        grid-template-rows: repeat(4, minmax(200px, auto));
+        margin: 60px;
+        grid-gap: 20px;
     }
-
-    .what-we-do{
-        grid-column: 1/2;
-        align-self: start;
-    }
-
-    .card1{ 
-        grid-row: 2 / span 3;
-        grid-column: 2 / span 3;
-    } */
 
     .what-we-do {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(4, auto);
-        width: auto;
-        padding: 52px 200px 0 213px;
-    }
-
-    .what-we-do h3 {
         grid-row: 1/ span 1;
         align-self: start;
+        font-size: 20px;
+        line-height: 26px;
+        padding-top: 15px;
     }
 
     .card1 {
-        grid-row: 2 / 4;
+        grid-column: ;
+        grid-row:  2 /span 3;
         align-self: start;
     }
 
     .cardii {
-        grid-column: 3/4;
+        grid-column: 2/span 2;
+        grid-row: 1/span 2;
         align-self: end;
     }
 
     .card3 {
-        grid-column: 3/4;
+        grid-row: 3/span 4;
         align-self: start;
+    }
+
+}
+
+@media screen and (min-width: 1000px){
+    .what-we-do {
+        font-size: 36px;
+        line-height: 46px;
+        padding-top: 15px;
+    }
+
+    .card1 {
+        grid-row:  2 /span 3;
+        align-self: center;
+    }
+
+    .cardii {
+        grid-column: 2/span 2;
+        grid-row: 1/span 2;
+        align-self: end;
+    }
+
+    .card3 {
+        grid-row: 3/span 4;
+        align-self: start;
+    }
+
+    .card h6 {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    
+    .card p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+    
+    .card a {
+        font-size: 16px;
+        text-decoration: none;
+        color: var(--pale-blue);
     }
 
 }
 
 /*
-.side-padding {
-    padding: 32px;
-    margin: 0 auto;
-}
-
-.what-we-do {
-    font-size: 16px;
-    width: 278px;
-    line-height: 25px;
-    margin: 0 auto;
-    text-align: center;
-    color: var(--blue);
-    margin-bottom: 40px;
-}
-
-.card {
-    text-align: center;
-    border-radius: 10px;
-    padding: 50px 48px;
-    margin-bottom: 96px;
-    box-shadow: 5px 20px 50px #1070B1;
-}
-
-.card img {
-    width: 130px;
-    padding-bottom: 26px;
-}
-
-.card h6 {
-    font-size: 16px;
-    line-height: 23px;
-    color: var(--blue);
-    padding-bottom: 15px;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.card p {
-    color: var(--light-blue);
-    font-size: 14px;
-    line-height: 22px;
-    text-align: center;
-    padding-bottom: 20px;
-    margin: 0 auto;
-}
-
-.card a {
-    font-size: 14px;
-    width: 73px;
-    text-decoration: none;
-    color: var(--pale-blue);
-    padding: 0;
-}
-
-.card i {
-    color: var(--pale-blue);
-    padding-left: 20px;
-    cursor: pointer;
-}
-
 .project-lead {
     font-size: 18px;
     line-height: 26px;
@@ -385,8 +355,6 @@ nav ul{
     height: 34px;
     left: 70px;
     margin-top: 30px;
-
-
 }
 
 
@@ -430,12 +398,10 @@ nav ul{
     margin-block-end: 0;
 }
 
-
 .our-client {
     background-color: #5A98D0;
     border-radius: 50px 0 0 0;
     width: 100%;
-
 }
 
 .client {
@@ -593,9 +559,6 @@ nav ul{
     margin-block-start: 0;
     margin-block-end: 0;
 }
-
-
-
 
 @media only screen and (min-width: 968px) {
 
