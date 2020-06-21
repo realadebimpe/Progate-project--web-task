@@ -184,7 +184,7 @@ nav ul{
 
 
  .home-body{
-     margin: 20px;
+     margin: 70px 70px 60px;
  }
 
 .what-we-do{
@@ -239,7 +239,7 @@ nav ul{
         display: grid;
         grid-template-columns: repeat(2, minmax(200px, auto));
         grid-template-rows: repeat(4, minmax(200px, auto));
-        /* margin: 60px; */
+        
         grid-gap: 30px;
     }
 
@@ -253,7 +253,7 @@ nav ul{
 
     .card1 {
         grid-row:  2 /span 3;
-        align-self: start;
+        align-self: center;
     }
 
     .cardii {
@@ -308,6 +308,28 @@ nav ul{
 
 }
 
+@media screen and (min-width: 1440px){
+    .what-we-do {
+        font-size: 42px;
+        line-height: 52px;
+    }
+
+    .card h6 {
+        font-size: 40px;
+        line-height: 46px;
+    }
+    
+    .card p {
+        font-size: 30px;
+        line-height: 42px;
+    }
+    
+    .card a {
+        font-size: 28px;
+    }
+
+}
+
 .our-project{
     margin: 40px;
 }
@@ -315,58 +337,54 @@ nav ul{
 .our-project img{
     width: 100%;
 }
-
-.project-lead {
-    /* display: flex;
-    justify-content: space-between;
-    margin: 40px;*/
-} 
-
+.project-lead{
+    margin-bottom: 50px;
+}
 .project-lead h3{
     font-size: 18px;
     line-height: 26px;
-    /* text-align: center; */
-    /* margin-bottom: 18px; */
     color: var(--blue);
 }
 
 .project-lead p {
     font-size: 16px;
     color: var(--light-blue);
-
 }
 
 
 .banner img{
     position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .banner h3 {
     color: #fff;
     position: absolute;
-    bottom: -356%;
-    text-align: right;
-    left: 50px;
-    width: 187px;
+    padding-top: 60px;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-size: 14px;
+    z-index: 1;
 }
 
 .banner span {
     font-weight: 200;
+    width: 50px;
+    text-align: center;
 }
 
 .card2{
     position: relative;
     margin-bottom: 20px;
+    border-radius: 80px;
 }
 
 .card2 h3{
     position: absolute;
     color: #fff;
     top: 10%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .card2 span{
@@ -375,104 +393,176 @@ nav ul{
     text-align: center;
 }
 
-/* .banner {
-    background-image: url('../images/Mask-Group.png');
-    background-size: 303px;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 134px;
-    position: relative;
-} */
+@media screen and (min-width: 768px){
+    .our-project{
+        margin: 70px;
+    }
 
-/*
-.project-lead {
-    font-size: 18px;
-    line-height: 26px;
-    text-align: center;
-    margin-bottom: 18px;
-    color: var(--blue);
+    .project-lead{
+        display: flex;
+        justify-content: space-between;
+       
+    }
+
+    .project-lead h3{
+        font-size: 36px;
+        font-weight: 200;
+        line-height: 46px;
+        margin: 0;
+    }
+    
+    .project-lead p {
+        width: 50%;
+    }
+
+    .banner h3 {
+        font-size: 20px;
+        left: 66%;
+    }
+
+    .project-cards {
+        display: flex;
+        justify-content: space-between;
+        /* width: 95%; */
+        max-width: 1000px;
+        /* margin: 0 auto;
+        padding: 20px; */
+        box-sizing: border-box;
+    } 
+
+
+    .phone {
+        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+            url('../images/Dribble-iphonex-mockup.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* width: 219px; */
+        height: 216px;
+        /* border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 24px; */
+    }
+    
+    .data {
+        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+            url('../images/upload.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border-radius: 10px; */
+        width: 219px;
+        /* margin: 0 auto; */
+        height: 216px;
+    }
+    
+    
+    .card2 h3{
+        font-size: 18px;
+    }
+    
+    .card2 span{
+        font-size: 18px;
+    }
 }
 
-.project-lead p {
-    font-size: 16px;
-    color: var(--light-blue);
-    text-align: center;
-    margin-bottom: 31px;
+@media screen and (min-width: 1000px){
+    .our-project{
+        margin: 70px;
+    }
+
+    .project-lead h3{
+        font-size: 36px;
+        font-weight: 200;
+        line-height: 46px;
+        margin-top: 10px;
+    }
+    
+    .project-lead p {
+        width: 50%;
+        font-size: 20px;
+    }
+
+    .banner h3 {
+        font-size: 30px;
+        left: 66%;
+    }
+
+
+
+    .phone {
+        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+            url('../images/Dribble-iphonex-mockup.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 219px;
+        height: 216px;
+        /* border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 24px; */
+    }
+    
+    .data {
+        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
+            url('../images/upload.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        /* border-radius: 10px; */
+        width: 219px;
+        /* margin: 0 auto; */
+        height: 216px;
+    }
+    
+    
+    .card2 h3{
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
+}
+@media screen and (min-width: 1440px){
+    .our-project{
+        margin: 70px;
+    }
+
+    .project-lead h3{
+        font-size: 40px;
+    }
+    
+    .project-lead p {
+        width: 50%;
+        font-size: 28px;
+    }
+
+    .banner h3 {
+        font-size: 35px;
+    }
+
+
+
+    .phone {
+        width: 219px;
+        height: 216px;
+        /* border-radius: 10px;
+        margin: 0 auto;
+        margin-bottom: 24px; */
+    }
+    
+    .data {
+        width: 219px;
+        /* margin: 0 auto; */
+        height: 216px;
+    }
+    
+    
+    .card2 h3{
+        font-size: 28px;
+        width: 100%;
+        text-align: center;
+    }
 }
 
-.banner {
-    background-image: url('../images/Mask-Group.png');
-    background-size: 303px;
-    background-repeat: no-repeat;
-    width: 250px;
-    height: 134px;
-    margin: 0 auto;
-    margin-bottom: 96px;
-    position: relative;
-}
-
-.banner h3 {
-    color: #fff;
-    position: absolute;
-    height: 46px;
-    left: 50px;
-    width: 187px;
-    font-size: 14px;
-
-}
-
-.banner p {
-    font-size: 14px;
-    color: rgb(224, 223, 223);
-    position: absolute;
-    width: 113px;
-    height: 34px;
-    left: 70px;
-    margin-top: 30px;
-}
 
 
-.phone {
-    background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-        url('../images/Dribble-iphonex-mockup.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 219px;
-    height: 216px;
-    border-radius: 10px;
-    margin: 0 auto;
-    margin-bottom: 24px;
-}
-
-.data {
-    background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-        url('../images/upload.png');
-    background-size: cover;
-    background-repeat: no-repeat;
-    border-radius: 10px;
-    width: 219px;
-    margin: 0 auto;
-    height: 216px;
-}
-
-.card2 h3 {
-    color: #fff;
-    font-size: 18px;
-    padding: 20px 0px 0 0;
-    text-align: center;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.card2 p {
-    font-size: 16px;
-    padding-left: 55px;
-    color: rgb(224, 223, 223);
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.our-client {
+/* .our-client {
     background-color: #5A98D0;
     border-radius: 50px 0 0 0;
     width: 100%;
@@ -850,4 +940,4 @@ nav ul{
         margin-left: 43%;
     }
 
-} */
+} */ 
