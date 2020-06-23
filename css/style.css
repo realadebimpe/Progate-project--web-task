@@ -184,7 +184,7 @@ nav ul{
 
 
  .home-body{
-     margin: 70px 70px 60px;
+     margin: 70px 30px 60px;
  }
 
 .what-we-do{
@@ -375,8 +375,8 @@ nav ul{
 
 .card2{
     position: relative;
-    margin-bottom: 20px;
-    border-radius: 80px;
+     margin-bottom: 20px;
+    /*border-radius: 80px; */
 }
 
 .card2 h3{
@@ -395,7 +395,7 @@ nav ul{
 
 @media screen and (min-width: 768px){
     .our-project{
-        margin: 70px;
+        /* margin: 70px; */
     }
 
     .project-lead{
@@ -423,38 +423,13 @@ nav ul{
     .project-cards {
         display: flex;
         justify-content: space-between;
-        /* width: 95%; */
-        max-width: 1000px;
-        /* margin: 0 auto;
-        padding: 20px; */
-        box-sizing: border-box;
+        /* width: 85%; */
     } 
-
-
-    .phone {
-        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-            url('../images/Dribble-iphonex-mockup.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* width: 219px; */
-        height: 216px;
-        /* border-radius: 10px;
-        margin: 0 auto;
-        margin-bottom: 24px; */
+    
+    .card2{
+        width: 45%;
     }
-    
-    .data {
-        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-            url('../images/upload.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* border-radius: 10px; */
-        width: 219px;
-        /* margin: 0 auto; */
-        height: 216px;
-    }
-    
-    
+
     .card2 h3{
         font-size: 18px;
     }
@@ -464,7 +439,7 @@ nav ul{
     }
 }
 
-@media screen and (min-width: 1000px){
+@media screen and (min-width: 1024px){
     .our-project{
         margin: 70px;
     }
@@ -485,37 +460,15 @@ nav ul{
         font-size: 30px;
         left: 66%;
     }
-
-
-
-    .phone {
-        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-            url('../images/Dribble-iphonex-mockup.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        width: 219px;
-        height: 216px;
-        /* border-radius: 10px;
-        margin: 0 auto;
-        margin-bottom: 24px; */
-    }
-    
-    .data {
-        background-image: linear-gradient(309.18deg, rgba(66, 165, 245, 0.4) -1.71%, rgba(21, 101, 192, 0.6) 74.54%),
-            url('../images/upload.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        /* border-radius: 10px; */
-        width: 219px;
-        /* margin: 0 auto; */
-        height: 216px;
-    }
-    
     
     .card2 h3{
         font-size: 28px;
         width: 100%;
         text-align: center;
+    }
+
+    .card span{
+        font-size: 20px;
     }
 }
 @media screen and (min-width: 1440px){
@@ -536,386 +489,122 @@ nav ul{
         font-size: 35px;
     }
 
-
-
-    .phone {
-        width: 219px;
-        height: 216px;
-        /* border-radius: 10px;
-        margin: 0 auto;
-        margin-bottom: 24px; */
-    }
-    
-    .data {
-        width: 219px;
-        /* margin: 0 auto; */
-        height: 216px;
-    }
-    
     
     .card2 h3{
         font-size: 28px;
         width: 100%;
         text-align: center;
     }
-}
+} 
 
-
-
-/* .our-client {
+.our-client {
     background-color: #5A98D0;
     border-radius: 50px 0 0 0;
-    width: 100%;
-}
-
-.client {
-    padding: 52px 0 0 0;
+    padding: 0 40px;
 }
 
 .client h3 {
     font-size: 14px;
-    width: 233px;
+    font-weight: 200;
     color: #fff;
     text-align: center;
-    margin: 0 auto;
+    padding-top: 20px;
 }
 
 .client p {
-    width: 279.35px;
+    text-align: center;
     font-size: 14px;
-    line-height: 26px;
-    margin: 0 auto;
+    line-height: 26px;    
     color: rgb(224, 223, 223);
-    padding-top: 28px;
-    margin-block-start: 0;
-    margin-block-end: 0;
 }
 
 .clients-table {
-    display: flex;
-    justify-content: space-between;
-    padding: 32px 0 0 20px;
-    width: 80%;
-    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 140px);
-    grid-template-rows: repeat(4, auto);
-    margin-bottom: 80px;
-
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    justify-items: center;
 }
 
-.clients-table p {
-    color: #fff;
-    font-size: 14px;
-    padding-bottom: 25px;
-    border-right: 1px solid #fff;
-    border-right-width: 6px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-.clients-table.more {
-    background-color: var(--blue);
-    padding: 10px;
-}
-
-
-.team {
-    background-color: #316099;
-    width: 85%;
-    border-radius: 0 50px 0 0;
-    padding: 27px 43px 0 43px;
-    padding-bottom: 20px;
-
-}
-
-.team h3 {
-    font: 18px;
-    line-height: 24px;
+.logo{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
     text-align: center;
-    margin-bottom: 16px;
     color: #fff;
+    font-weight: 200;
+    /* padding-left: 50px; */
 }
 
-.team p {
-    font-size: 14px;
-    line-height: 26px;
-    color: #fff;
-    margin-bottom: 30px;
+.logo:nth-of-type(n + 5){
+    border-top: 1px solid #fff;
 }
 
-.team button {
-    font-size: 14px;
-    padding: 4px 32px;
-    color: #fff;
-    margin-left: 250px;
-    border-radius: 10px;
-    border: none;
-    background-color: var(--pale-blue);
-    cursor: pointer;
+.logo:nth-of-type(n + 2):nth-of-type(-n + 4),
+.logo:nth-of-type(n + 6):nth-of-type(-n + 8){
+    border-left: 1px solid #fff ;
 }
-
-.contacts {
+    
+.more{
     background-color: var(--blue);
-    margin-bottom: 40px;
-}
+  } 
 
-#logo-name {
-    list-style-type: none;
-    color: #fff;
-    font-size: 16px;
-    cursor: pointer;
 
-}
-
-#logo-name span {
-    padding-bottom: 30px;
-
-}
-
-.contacts li {
-    list-style-type: none;
-    color: #fff;
-    font-size: 14px;
-    font-weight: normal;
-    margin: 20px 0 10px 0;
-
-}
-
-.contacts span {
-    padding-right: 10px;
-}
-
-.about {
-    margin-bottom: 20px;
-}
-
-.about li {
-    list-style-type: none;
-    color: #fff;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.about h6 {
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 26px;
-    margin-block-start: 0;
-    margin-block-end: 20px;
-}
-
-.socialm {
-    margin-bottom: 20px;
-}
-
-.socialm li {
-    list-style-type: none;
-    color: #fff;
-    margin-bottom: 10px;
-    font-size: 14px;
-}
-
-.socialm h6 {
-    font-size: 16px;
-    color: #fff;
-    margin-bottom: 16px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-}
-
-@media only screen and (min-width: 968px) {
-
-    ul {
-        margin: 0 40px;
-    }
-
-    .hero {
-        position: relative;
-        padding-top: 40px;
-        height: 20%;
-        background-position: bottom right;
-        background-size: 400px;
-    }
-
-    .header h1 {
-        font-size: 64px;
-        width: 660px;
-        line-height: 74px;
-        margin: 50px 0 60px 190px;
-        padding: 0;
-    }
-
-    .header p {
-        font-size: 16px;
-        line-height: 26px;
-        width: 411px;
-        padding: 0;
-        margin: 0 0 60px 190px;
-        color: var(--blue);
-    }
-
-    .header button {
-        font-size: 16px;
-        margin: 0 0 60px 190px;
-    }
-
-    .what-we-do {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(4, auto);
-        width: auto;
-        padding: 52px 200px 0 213px;
-    }
-
-    .what-we-do h3 {
-        grid-row: 1/ span 1;
-    }
-
-    .card1 {
-        grid-row: 2 / 4;
-        align-self: start;
-    }
-
-    .cardii {
-        grid-column: 3/4;
-        align-self: end;
-    }
-
-    .card3 {
-        grid-column: 3/4;
-        align-self: start;
-    }
-
-    .project-cards {
+  @media screen and (min-width: 768px){
+      .our-client{
+          border-radius: 200px 0 0 0;
+      }
+    
+    .client{
         display: flex;
         justify-content: space-between;
+        /* padding-bottom:0 30px 40px; */
     }
 
-    .banner {
-        width: auto;
-        height: 417px;
-        background-size: 60%;
-    background-position: center;
-    margin-bottom: 0;
+    .client h3 {
+        font-size: 30px;
+        width: 50%;
     }
-
-    .banner h3 {
-        left: 450px;
-        font-size: 28px;
-        width: auto;
-        margin-top: 110px;
-    }
-
-    .banner p {
-        font-size: 16px;
-        width: auto;
-        left: 560px;
-        margin-top: 150px;
-    }
-
-    .project-cards{
-        padding: 0 213px 0 213px;
-    }
-
-    .project-lead {
-        display: flex;
-        justify-content: space-between;
-        margin: 0 auto;
-        padding: 0 200px 0 213px;
-    }
-
-    .project-lead h3 {
-        font-size: 36px;
-        line-height: 46px;
-        width: 236px;
+    
+    .client p {
         text-align: left;
-        margin-block-start: 0;
-        margin-block-end: 0;
+        font-size: 20px;
+        padding-top: 35px; 
     }
-
-    .project-lead p {
-        font-size: 16px;
-        line-height: 26px;
-        margin:  45px 0 0 0;
-        width: 540px;
+    
+    .logo{
+        padding-left: 30px;
     }
+    
+    
+  }
 
-
-    .phone {
-        width: 422px;
-        margin: 0 20px 24px 0;
-        height: 417px;
+  @media screen and (min-width: 1024px){
+    
+    .client{
+        width:85%
     }
-
-    .data {
-        width: 422px;
-        margin: 0 auto;
-        height: 417px;
+    
+    .client p {
+        text-align: left;
+        font-size: 20px;
+        padding-top: 30px; 
     }
-
-    .card2 h3 {
-        font-size: 28px;
+    
+    .logo{
+        font-size: 20px;
     }
+  }
 
-    .card2 p {
-        font-size: 16px;
-        padding: 0;
-        text-align: center;
-        padding-top: 15px;
-        margin-block-start: 0;
-        margin-block-end: 0;
-    }
-
-    .clients-table {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: minmax(100px, auto);
-        max-width: 950px;
-        margin: 0 auto;
-        grid-gap: 10px;
-        grid-template-areas:
-            "logo1 logo1""logo2 logo2""logo3 logo3""logo4 logo4"
-            "logo5 logo5""logo6 logo6""logo7 logo7""more more";
-    }
-
-    .clients-table>* {
-        padding: 10px;
-    }
-
-    .logo1 {
-        grid-area: logo1;
-    }
-
-    .logo2 {
-        grid-area: logo2;
-    }
-
-    .logo3 {
-        grid-area: logo3;
-    }
-
-    .logo4 {
-        grid-area: logo4;
-    }
-
-    .logo5 {
-        grid-area: logo5;
-    }
-
-    .logo6 {
-        grid-area: logo6;
-    }
-
-    .logo7 {
-        grid-area: logo7;
-    }
-
-    .more {
-        grid-area: more;
-    }
+  .team{
+    border-radius: 0 200px 0 0;
+    /* width: 45%; */
+    background-color: var(--blue);
+} 
 
 
+/*
     .our-client {
         border-radius: 200px 0 0 0;
     }
